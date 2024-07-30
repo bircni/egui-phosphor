@@ -27,7 +27,10 @@ The above `add_to_fonts` helper adds the chosen variant (`Regular`) as a fallbac
 Use the constants provided by the crate in your text:
 
 ```rust
-ui.label(egui::RichText::new(format!("FILE_CODE {}", egui_phosphor::regular::FILE_CODE)).size(32.0));
+ui.label(
+  egui::RichText::new(format!("FILE_CODE {}", egui_phosphor::regular::FILE_CODE))
+    .size(32.0),
+);
 ```
 
 **Note: Make sure to use the appropriate character codes for your chosen variant!** This means for `Variant::Regular` you should use `regular::FILE_CODE`, for `Variant::Fill` you should use `fill::FILE_CODE` etc.
