@@ -1,3 +1,4 @@
+[![Latest version](https://img.shields.io/crates/v/egui-phosphor.svg)](https://crates.io/crates/egui-phosphor)
 # egui_phosphor
 
 Bundles [Phosphor icons](https://phosphoricons.com/) with boilerplate to use in your egui app.
@@ -34,3 +35,13 @@ ui.label(egui::RichText::new(format!("FILE_CODE {}", egui_phosphor::regular::FIL
 ## License
 
 egui-phosphor is licensed under [MIT](LICENSE-MIT) OR [Apache-2.0](LICENSE-APACHE). Phosphor Icons are licensed under [MIT](https://github.com/phosphor-icons/web/blob/master/LICENSE).
+
+## Examples
+
+Try the examples with:
+
+```sh
+cargo run --example debug_alignment --features="thin light regular bold fill"
+cargo run --example multiple_variants --features="thin light regular bold fill"
+```
+
